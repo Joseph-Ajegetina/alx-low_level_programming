@@ -4,26 +4,16 @@
  *main - print lowercase and uppercase a-zA-Z using putchar
  *Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	char alpha = 'a';
+	int i;
 
-	while (lower <= 'z') /*print lowercases a-z*/
-	{
-		putchar(lower);
-		lower++;
-	}
-
-	/* 
-	while (upper <= 'Z')
-	{
-		putchar(upper);
-		upper++;
-	}
-
+	for (i = 0; i < 26; i++, alpha++)
+		putchar(alpha);
+	alpha = 'A';
+	for (i = 0; i < 26; i++, alpha++)
+		putchar(alpha);
 	putchar('\n');
-
 	return (0);
 }

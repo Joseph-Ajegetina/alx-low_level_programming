@@ -7,22 +7,14 @@
 
 int main(void)
 {
-	int n = '0';
-	int a_to_f = 'a';
+	char alpha = '0';
+	int i;
 
-	while (n <= '9') 
-	{
-		putchar(n);
-		n++;
-	}
-
-	while (a_to_f <= 'f') 
-	{
-		putchar(a_to_f);
-		a_to_f++;
-	}
-
+	for (i = 0; i < 10; i++, alpha++)
+		putchar(alpha);
+	alpha = 'a';
+	for (i = 0; i < 6; i++, alpha++)
+		putchar(alpha);
 	putchar('\n');
-
 	return (0);
 }
