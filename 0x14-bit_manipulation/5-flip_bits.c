@@ -1,4 +1,4 @@
-#include "alx.h"
+#include "main.h"
 /**
  * flip_bits - flips bits
  * @n: first number
