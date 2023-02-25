@@ -9,6 +9,7 @@ int main(void)
 {
  int i;
 
+ i = 98;
  printf("Infinite loop incoming :(\n");
 
  i = 0;
